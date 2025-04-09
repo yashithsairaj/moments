@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@theme{
+  --color-pinky-100: #EB7BB6;
+  --color-pinky-200: #E84D96;
+  --font-roboto : "Roboto", sans-serif
+}
+
+
+/* Add these styles to your main CSS file */
+
+/* Custom styles for React Slick carousel */
+.gallery-carousel {
+  position: relative;
+}
+
+/* Customize dots */
+.custom-dot-class {
+  display: flex !important;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2rem;
+}
+
+.custom-dot-class li {
+  margin: 0;
+}
+
+.custom-dot-class li.slick-active div {
+  background-color: #E84D96;
+  transform: scale(1.2);
+}
+
+/* Customize arrows */
+.gallery-carousel .slick-prev,
+.gallery-carousel .slick-next {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.gallery-carousel .slick-prev {
+  left: 16px;
+}
+
+.gallery-carousel .slick-next {
+  right: 16px;
+}
+
+.gallery-carousel .slick-prev:before,
+.gallery-carousel .slick-next:before {
+  color: #E84D96;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-carousel .slick-prev,
+  .gallery-carousel .slick-next {
+    display: none !important;
+  }
+}
+
+/* Enhance hover effects */
+.gallery-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+}
+
+/* Add space for arrows */
+.gallery-carousel {
+  margin: 0 20px;
+}
+
+/* Make sure the slides don't jump height */
+.slick-slide > div {
+  height: 100%;
+}
+
+/* Handle image loading state */
+.image-loading {
+  background-color: #f3f4f6;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
