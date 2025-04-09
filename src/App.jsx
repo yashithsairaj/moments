@@ -24,9 +24,9 @@ function App() {
     <>
       <div className="min-h-screen bg-gray-100">
         <Navbar />
-        <main className="container mx-auto px-4 py-12">
-          <Hero />
-          <div className="py-10 px-14 md:px-32">
+        <Hero />
+        <main className="container mx-auto px-1 py-12">
+          <div className="py-10 px-4 md:px-4">
             <FloatingHero />
             <HeroDescription />
           </div>
@@ -35,9 +35,7 @@ function App() {
           <GalleryCarousel />
           <NavigationDemo />
           <FAQ />
-          <div className="md:px-32">
-            <SupportSection />
-          </div>
+          <SupportSection />
         </main>
         <Footer />
       </div>

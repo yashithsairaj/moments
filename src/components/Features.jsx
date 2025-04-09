@@ -173,10 +173,10 @@ const FeatureCard = ({ title, icon, bgColor, children }) => {
   return (
     <div className="bg-white rounded-3xl drop-shadow-2xl overflow-hidden flex-row hover:transform hover:-translate-y-2 transition-transform duration-300">
       <div
-        className={`${bgColor} md:p-4 h-full flex flex-col items-center justify-center `}
+        className={`${bgColor} md:p-2 h-full flex flex-col items-center justify-center `}
       >
         {children}
-        <div className="mt-4 text-center font-roboto text-3xl bg-white">
+        <div className="mt-4 text-center font-roboto text-xl bg-white">
           <span>{title}</span> {icon}
         </div>
       </div>
@@ -187,7 +187,7 @@ const FeatureCard = ({ title, icon, bgColor, children }) => {
 const Features = () => {
   return (
     <>
-      <div className="grid grid-cols-3 grid-rows-3 gap-4 md:px-18"  data-aos="fade-up" data-aos-duration="1000">
+      <div className="grid grid-cols-3 grid-rows-3 gap-4 md:px-7"  data-aos="fade-up" data-aos-duration="1000">
         {/* event album */}
         <div className="col-span-1 md:pt-5">
           <FeatureCard title="Event Albums" icon="📸" bgColor="bg-white">
@@ -240,9 +240,9 @@ const Features = () => {
           </FeatureCard>
         </div>
         {/* AI face */}
-        <div className="row-span-2"  data-aos="fade-up" data-aos-duration="1000">
+        <div className="row-span-2 "  data-aos="fade-up" data-aos-duration="1000">
           <FeatureCard title="AI Face Recognition" icon="🤖" bgColor="bg-white">
-            <div className="md:p-20  md:px-26 bg-gradient-to-br from-pink-200 to-yellow-200 rounded-2xl">
+            <div className="md:py-16  md:px-12 bg-gradient-to-br from-pink-200 to-yellow-200 rounded-2xl">
               <div className="w-48 h-96 bg-black rounded-3xl overflow-hidden shadow-lg border-8 border-black">
                 <div className="h-full w-full flex items-center justify-center text-center p-4">
                   <div className="text-white">
@@ -262,18 +262,18 @@ const Features = () => {
           </FeatureCard>
         </div>
         {/* easy share */}
-        <div className="row-span-2 md:pt-7" data-aos="fade-up" data-aos-duration="1000">
+        <div className="row-span-2 md:pt-16" data-aos="fade-up" data-aos-duration="1000">
           <FeatureCard title="Easy Sharing" icon="📤" bgColor="bg-white">
-            <div className="relative w-full h-48 md:h-[60vh] bg-gradient-to-br from-pink-200 to-yellow-200 rounded-2xl">
+            <div className="relative w-full h-48 md:h-[70vh] bg-gradient-to-br from-pink-200 to-yellow-200 rounded-2xl">
               <div className="absolute top-2 left-4">
                 <div className="bg-pink-500 text-white rounded-full w-18 h-18 flex items-center justify-center">
                   <span className="text-5xl">♡</span>
                 </div>
               </div>
 
-              <div className="absolute top-35 right-8 transform rotate-12">
+              <div className="absolute top-45 right-8 transform rotate-12">
                 <div className="bg-white rounded-lg py-1 px-3 shadow-md">
-                  <span className="text-xl">
+                  <span className="text-lg">
                     One-Tap
                     <br />
                     Sharing
@@ -291,9 +291,9 @@ const Features = () => {
                 </div>
               </div>
 
-              <div className="absolute top-25 left-12 transform -rotate-20">
+              <div className="absolute top-30 left-10 transform -rotate-20">
                 <div className="bg-white rounded-lg py-1 px-3 shadow-md">
-                  <span className="text-xl">Collaborate Effortlessly</span>
+                  <span className="text-lg">Collaborate <br />Effortlessly</span>
                 </div>
               </div>
 
@@ -303,7 +303,7 @@ const Features = () => {
                 </div>
               </div>
 
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-6 right-10">
                 <div className="bg-pink-200 text-pink-500 rounded-full w-18 h-18 flex items-center justify-center">
                   <span className="text-2xl">↺</span>
                 </div>

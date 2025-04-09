@@ -4,17 +4,17 @@ import { Home, Upload, ImageIcon, Folder } from "lucide-react";
 
 const NavigationDemo = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center gap-24 px-20">
+    <div className="min-h-screen flex flex-col justify-center gap-24 px-4">
       {/* Top Navigation */}
       <div className="flex flex-col items-start gap-4 md:pl-48 hover:scale-105 transition-all" data-aos="fade-up" data-aos-duration="1000">
-        <div className="flex items-center bg-[#3D3D3D] rounded-full px-3 py-2 space-x-14 pr-5">
-          <button className="flex items-center bg-white text-black px-6 py-4 rounded-full font-medium text-lg gap-7">
-            <Home size={26} />
+        <div className="flex items-center bg-[#3D3D3D] rounded-full px-3 py-2 space-x-10 pr-5">
+          <button className="flex items-center bg-white text-black px-4 py-1 rounded-full font-medium text-lg gap-7">
+            <Home size={20} />
             Home
           </button>
-          <Upload size={20} className="text-white" />
-          <ImageIcon size={20} className="text-white" />
-          <Folder size={20} className="text-white" />
+          <Upload size={18} className="text-white" />
+          <ImageIcon size={18} className="text-white" />
+          <Folder size={18} className="text-white" />
         </div>
 
         <div className="flex items-center">
@@ -42,10 +42,10 @@ const NavigationDemo = () => {
           </svg>
 
           <div>
-            <h2 className="text-3xl font-semibold">
+            <h2 className="text-xl font-semibold">
               Explore Your Events at a Glance 📅✨
             </h2>
-            <p className="text-2xl font-medium">
+            <p className="text-lg font-medium">
               Easily access all your special moments in one place!
             </p>
           </div>
@@ -54,19 +54,19 @@ const NavigationDemo = () => {
 
       {/* Bottom Navigation */}
       <div className="flex flex-col items-end gap-4 md:pr-48 hover:scale-105 transition-all" data-aos="fade-up" data-aos-duration="1000">
-        <div className="flex items-center bg-[#3D3D3D] rounded-full px-5 py-2 space-x-14">
-          <Home size={20} className="text-white" />
-          <button className="flex items-center bg-white text-black px-6 py-4 rounded-full font-medium text-lg gap-7">
-            <Upload size={26} />
+        <div className="flex items-center bg-[#3D3D3D] rounded-full px-3 py-2 space-x-10">
+          <Home size={18} className="text-white" />
+          <button className="flex items-center bg-white text-black px-4 py-1 rounded-full font-medium text-lg gap-7">
+            <Upload size={20} />
             Upload
           </button>
-          <ImageIcon size={20} className="text-white" />
-          <Folder size={20} className="text-white" />
+          <ImageIcon size={18} className="text-white" />
+          <Folder size={18} className="text-white" />
         </div>
 
         <div className="flex items-center justify-end">
           <div className="text-right mr-2">
-            <p className="text-2xl font-semibold">
+            <p className="text-xl font-semibold">
               🖼️ Easily upload event photos from your
               <br />
               device or camera!

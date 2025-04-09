@@ -4,7 +4,7 @@ import { Apple, Play } from 'lucide-react';
 const DownloadButton = ({ platform, icon, primary }) => {
   return (
     <button
-      className={`flex items-center gap-2 px-7 py-4 rounded-full border font-medium text-xl hover:scale-105 transition-all
+      className={`flex items-center gap-2 px-5 py-2 rounded-full border font-medium text-base hover:scale-105 transition-all
         ${primary ? 'bg-pink-600 text-white border-pink-600 hover:bg-pink-700' : 'text-black border-pink-300 hover:bg-pink-100'}
       `}
     >
@@ -16,14 +16,14 @@ const DownloadButton = ({ platform, icon, primary }) => {
 
 const SupportSection = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-white to-pink-100 rounded-3xl p-6 md:p-10 flex flex-col md:flex-row justify-between items-center gap-6 shadow-sm " data-aos="fade-up" data-aos-duration="1000">
+    <div className="w-full bg-gradient-to-b from-white to-pink-100 rounded-3xl p-6 md:p-7  flex flex-col md:flex-row justify-between items-center gap-6 shadow-sm " >
       {/* Left content */}
       <div>
-        <h2 className="text-5xl font-roboto text-black">
+        <h2 className="text-4xl font-roboto text-black">
           Need <br /><span className="text-pink-600">further assistance?</span> <span role="img" aria-label="sparkles">✨</span>
         </h2>
-        <p className="text-black text-xl mt-3">Reach out to our support team at</p>
-        <p className="text-lg text-black mt-1">support@momentsapp.com</p>
+        <p className="text-black text-lg mt-3">Reach out to our support team at</p>
+        <p className="text-base text-black mt-1">support@momentsapp.com</p>
       </div>
 
       {/* Right buttons */}

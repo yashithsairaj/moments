@@ -33,13 +33,13 @@ const FloatingHero = () => {
         <img
           src={phoneImage}
           alt="phone"
-          className="relative z-10 w-[250px] md:w-[300px] lg:w-[360px]"
+          className="relative z-10 w-[150px] md:w-[100px] lg:w-[280px]"
           data-aos="fade-up" data-aos-duration="2000"
         />
 
         {/* Floating Images */}
         {/* Top Left Locked */}
-        <div className="absolute top-[15%] left-[10%] w-20 h-28 md:w-42 md:h-52 bg-cover rounded-xl overflow-hidden backdrop-blur-sm bg-white/10 shadow-md z-10" data-aos="fade-up" data-aos-duration="1500">
+        <div className="absolute top-[15%] left-[10%] w-20 h-28 md:w-32 md:h-42 bg-cover rounded-xl overflow-hidden backdrop-blur-sm bg-white/10 shadow-md z-10" data-aos="fade-up" data-aos-duration="1500">
           <img
             src={lockedImage}
             alt="blurred"
@@ -53,7 +53,7 @@ const FloatingHero = () => {
         </div>
 
         {/* Bottom Left Locked */}
-        <div className="absolute bottom-[10%] left-[12%] w-20 h-28 md:w-24 md:h-32 bg-cover rounded-xl overflow-hidden backdrop-blur-sm bg-white/10 shadow-md z-10" data-aos="fade-up" data-aos-duration="1500">
+        <div className="absolute bottom-[10%] left-[12%] w-20 h-28 md:w-20 md:h-28 bg-cover rounded-xl overflow-hidden backdrop-blur-sm bg-white/10 shadow-md z-10" data-aos="fade-up" data-aos-duration="1500">
           <img
             src={lockedImage}
             alt="blurred"
@@ -67,7 +67,7 @@ const FloatingHero = () => {
         </div>
 
         {/* Top Right Clear Image */}
-        <div className="absolute top-[8%] right-[8%] w-20 h-28 md:w-42 md:h-52 rounded-xl overflow-hidden z-10 shadow-lg" data-aos="fade-up" data-aos-duration="1500">
+        <div className="absolute top-[8%] right-[8%] w-20 h-28 md:w-32 md:h-42 rounded-xl overflow-hidden z-10 shadow-lg" data-aos="fade-up" data-aos-duration="1500">
           <img
             src={clearImage}
             alt="clear"
@@ -76,7 +76,7 @@ const FloatingHero = () => {
         </div>
 
         {/* Bottom Right Locked */}
-        <div className="absolute bottom-[8%] right-[10%] w-20 h-28 md:w-42 md:h-52 bg-cover rounded-xl overflow-hidden backdrop-blur-sm bg-white/10 shadow-md z-10" data-aos="fade-up" data-aos-duration="1500">
+        <div className="absolute bottom-[8%] right-[10%] w-20 h-28 md:w-32 md:h-42 bg-cover rounded-xl overflow-hidden backdrop-blur-sm bg-white/10 shadow-md z-10" data-aos="fade-up" data-aos-duration="1500">
           <img
             src={lockedImage}
             alt="blurred"
@@ -93,7 +93,7 @@ const FloatingHero = () => {
         <img
           src={iconStar}
           alt="star"
-          className="absolute top-[10%] left-[25%] w-8 md:w-20 z-20"
+          className="absolute top-[10%] left-[25%] w-8 md:w-14 z-20"
         />
         <img
           src={iconDownload}
@@ -108,7 +108,7 @@ const FloatingHero = () => {
         <img
           src={iconHeart}
           alt="heart"
-          className="absolute bottom-[35%] right-[25%] w-8 md:w-20 z-20"
+          className="absolute bottom-[35%] right-[25%] w-8 md:w-15 z-20"
         />
       </div>
     </>

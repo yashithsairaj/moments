@@ -67,11 +67,11 @@ import DownloadButtons from "./DownloadButtons";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-around gap-8 px-6 md:px-1 py-7 rounded-2xl">
+    <section className="flex flex-col md:flex-row items-center justify-around gap-8 px-6 md:px-4 md:pt-18 py-7 rounded-2xl">
       {/* Left Image */}
       <div className="flex-col hover:scale-105 transition-all " data-aos="fade-up" data-aos-duration="2000">
         <div className="pt-20"></div>
-        <div className="w-40 h-56 rounded-4xl overflow-hidden shadow-2xl border-white border-2 ">
+        <div className="w-30 h-42 rounded-xl overflow-hidden shadow-2xl border-white border-2 ">
           <img
             src="/hero1.png"
             alt="Wedding"
@@ -82,7 +82,7 @@ const Hero = () => {
 
       {/* Center Text */}
       <div className="text-center md:text-left" data-aos="fade-up" data-aos-duration="1000">
-        <h1 className="text-4xl md:text-8xl font-bold leading-tight font-roboto">
+        <h1 className="text-4xl md:text-[5rem] font-bold leading-tight font-roboto">
           Your Special <span className="text-pink-500">Moments</span>,{" "}
           <br className="hidden md:block" />
           <div className="flex">

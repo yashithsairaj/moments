@@ -58,8 +58,8 @@ const FAQ = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto py-10 px-4">
-      <h2 className="text-7xl font-bold mb-8 text-center pb-10" data-aos="fade-up" data-aos-duration="1000">
+    <div className="max-w-3xl mx-auto py-10 px-4" >
+      <h2 className="text-5xl font-bold mb-8 text-center pb-10" data-aos="fade-up" data-aos-duration="1000">
         Frequently Asked Questions <span role="img" aria-label="pointing finger">☝️</span>
       </h2>
       {faqData.map((item, index) => (
